@@ -58,6 +58,8 @@ Bash
 The engine includes a KeyboardInterrupt handler that automatically serializes the current "brain" state to a .nn file if the process is stopped, ensuring no training progress is lost.
 
 📌 Project Roadmap
+
+```sh
 [X] Manual Gradient Descent: From-scratch implementation of backprop.
 
 [X] Multi-Architecture Support: Basic, Medium, and Full configurations.
@@ -67,6 +69,6 @@ The engine includes a KeyboardInterrupt handler that automatically serializes th
 [X] Performance Benchmarking: Detailed PDF analysis of model results.
 
 [ ] Optimization: Implementation of Adam/RMSProp optimizers.
-
+```
 🎗 License
 This project is protected under the MIT License.
