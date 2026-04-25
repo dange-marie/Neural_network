@@ -41,15 +41,19 @@
 The system is designed to be highly modular via command-line arguments.
 
 1. Training a specific architecture:
-
 Bash
 
+```sh
 ❯ python3 my_mlp.py --train --file file.txt --load my_torch_network_medium.conf --save_file my_torch_network_medium.nn
-2. Running Predictions:
+```
 
+2. Running Predictions:
 Bash
 
+```sh
 ❯ python3 my_mlp.py --predict --file file.txt --load my_torch_network_full.nn
+```
+
 3. Safety Features:
 The engine includes a KeyboardInterrupt handler that automatically serializes the current "brain" state to a .nn file if the process is stopped, ensuring no training progress is lost.
 
