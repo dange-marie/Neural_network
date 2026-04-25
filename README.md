@@ -1,225 +1,74 @@
 <p align="center">
-    <img src="https://img.icons8.com/external-tal-revivo-regular-tal-revivo/96/external-readme-is-a-easy-to-build-a-developer-hub-that-adapts-to-the-user-logo-regular-tal-revivo.png" align="center" width="30%">
+    <img src="https://img.icons8.com/external-tal-revivo-regular-tal-revivo/96/external-readme-is-a-easy-to-build-a-developer-hub-that-adapts-to-the-user-logo-regular-tal-revivo.png" align="center" width="15%">
 </p>
-<p align="center"><h1 align="center"><code>❯ REPLACE-ME</code></h1></p>
+<p align="center"><h1 align="center"><code>❯ neural_network</code></h1></p>
 <p align="center">
-	<em><code>❯ REPLACE-ME</code></em>
+	<em>A deep-dive into the mathematical foundations of AI: Neural Network from Scratch.</em>
 </p>
-<p align="center">
-	<!-- local repository, no metadata badges. --></p>
-<p align="center">Built with the tools and technologies:</p>
+
+<p align="center">Built with:</p>
 <p align="center">
 	<img src="https://img.shields.io/badge/Python-3776AB.svg?style=flat&logo=Python&logoColor=white" alt="Python">
+    <img src="https://img.shields.io/badge/NumPy-013243.svg?style=flat&logo=NumPy&logoColor=white" alt="NumPy">
 </p>
 <br>
 
-## 🔗 Table of Contents
-
-- [📍 Overview](#-overview)
-- [👾 Features](#-features)
-- [📁 Project Structure](#-project-structure)
-  - [📂 Project Index](#-project-index)
-- [🚀 Getting Started](#-getting-started)
-  - [☑️ Prerequisites](#-prerequisites)
-  - [⚙️ Installation](#-installation)
-  - [🤖 Usage](#🤖-usage)
-  - [🧪 Testing](#🧪-testing)
-- [📌 Project Roadmap](#-project-roadmap)
-- [🔰 Contributing](#-contributing)
-- [🎗 License](#-license)
-- [🙌 Acknowledgments](#-acknowledgments)
-
----
-
 ## 📍 Overview
-
-<code>❯ REPLACE-ME</code>
-
----
-
-## 👾 Features
-
-<code>❯ REPLACE-ME</code>
+**neural_network** is a custom implementation of a Multi-Layer Perceptron (MLP) built from scratch. It demonstrates the core principles of Deep Learning by translating **FEN (Forsyth-Edwards Notation)** strings into 78-dimensional tensors to classify chess board outcomes. The project includes benchmarks and multiple pre-configured network architectures.
 
 ---
 
 ## 📁 Project Structure
 
 ```sh
-└── /
-    ├── Makefile
-    ├── basic_network.conf
-    ├── config
-    │   └── template.json
-    ├── file.txt
-    ├── my_mlp.py
-    ├── my_torch
-    ├── my_torch_analyser.py
-    ├── my_torch_generator
-    ├── my_torch_generator.py
-    └── perceptron.py
+└── neural_network/
+    ├── my_mlp.py                     # Core MLP engine & Backpropagation
+    ├── params.py                     # CLI Argument & Environment handler
+    ├── my_torch_generator.py         # Data processing & FEN Encoding
+    ├── my_torch_analyzer.py          # Training visualization & Metrics
+    ├── Benchmarks.pdf                # Performance analysis & Results
+    ├── config/
+    │   ├── my_torch_network_basic.conf   # Simple architecture
+    │   ├── my_torch_network_medium.conf  # Intermediate architecture
+    │   └── my_torch_network_full.conf    # Advanced deep architecture
+    └── models/
+        ├── my_torch_network_basic.nn     # Trained basic model
+        ├── my_torch_network_medium.nn    # Trained medium model
+        └── my_torch_network_full.nn      # Trained full model
 ```
 
+🤖 Usage & Testing
+The system is designed to be highly modular via command-line arguments.
 
-### 📂 Project Index
-<details open>
-	<summary><b><code>/</code></b></summary>
-	<details> <!-- __root__ Submodule -->
-		<summary><b>__root__</b></summary>
-		<blockquote>
-			<table>
-			<tr>
-				<td><b><a href='/basic_network.conf'>basic_network.conf</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
-			</tr>
-			<tr>
-				<td><b><a href='/Makefile'>Makefile</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
-			</tr>
-			<tr>
-				<td><b><a href='/perceptron.py'>perceptron.py</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
-			</tr>
-			<tr>
-				<td><b><a href='/my_torch'>my_torch</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
-			</tr>
-			<tr>
-				<td><b><a href='/file.txt'>file.txt</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
-			</tr>
-			<tr>
-				<td><b><a href='/my_mlp.py'>my_mlp.py</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
-			</tr>
-			<tr>
-				<td><b><a href='/my_torch_analyser.py'>my_torch_analyser.py</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
-			</tr>
-			<tr>
-				<td><b><a href='/my_torch_generator.py'>my_torch_generator.py</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
-			</tr>
-			<tr>
-				<td><b><a href='/my_torch_generator'>my_torch_generator</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
-			</tr>
-			</table>
-		</blockquote>
-	</details>
-	<details> <!-- config Submodule -->
-		<summary><b>config</b></summary>
-		<blockquote>
-			<table>
-			<tr>
-				<td><b><a href='/config/template.json'>template.json</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
-			</tr>
-			</table>
-		</blockquote>
-	</details>
-</details>
+1. Training a specific architecture:
+Bash
 
----
-## 🚀 Getting Started
-
-### ☑️ Prerequisites
-
-Before getting started with , ensure your runtime environment meets the following requirements:
-
-- **Programming Language:** Python
-
-
-### ⚙️ Installation
-
-Install  using one of the following methods:
-
-**Build from source:**
-
-1. Clone the  repository:
 ```sh
-❯ git clone ../
+❯ python3 my_mlp.py --train --file file.txt --load my_torch_network_medium.conf --save_file my_torch_network_medium.nn
 ```
 
-2. Navigate to the project directory:
+2. Running Predictions:
+Bash
+
 ```sh
-❯ cd 
+❯ python3 my_mlp.py --predict --file file.txt --load my_torch_network_full.nn
 ```
 
-3. Install the project dependencies:
+3. Safety Features:
+The engine includes a KeyboardInterrupt handler that automatically serializes the current "brain" state to a .nn file if the process is stopped, ensuring no training progress is lost.
 
-echo 'INSERT-INSTALL-COMMAND-HERE'
+📌 Project Roadmap
 
+```sh
+[X] Manual Gradient Descent: From-scratch implementation of backprop.
 
+[X] Multi-Architecture Support: Basic, Medium, and Full configurations.
 
-### 🤖 Usage
-Run  using the following command:
-echo 'INSERT-RUN-COMMAND-HERE'
+[X] FEN Transformation: Custom encoding of chess board states.
 
-### 🧪 Testing
-Run the test suite using the following command:
-echo 'INSERT-TEST-COMMAND-HERE'
+[X] Performance Benchmarking: Detailed PDF analysis of model results.
 
----
-## 📌 Project Roadmap
-
-- [X] **`Task 1`**: <strike>Implement feature one.</strike>
-- [ ] **`Task 2`**: Implement feature two.
-- [ ] **`Task 3`**: Implement feature three.
-
----
-
-## 🔰 Contributing
-
-- **💬 [Join the Discussions](https://LOCAL///discussions)**: Share your insights, provide feedback, or ask questions.
-- **🐛 [Report Issues](https://LOCAL///issues)**: Submit bugs found or log feature requests for the `` project.
-- **💡 [Submit Pull Requests](https://LOCAL///blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
-
-<details closed>
-<summary>Contributing Guidelines</summary>
-
-1. **Fork the Repository**: Start by forking the project repository to your LOCAL account.
-2. **Clone Locally**: Clone the forked repository to your local machine using a git client.
-   ```sh
-   git clone .
-   ```
-3. **Create a New Branch**: Always work on a new branch, giving it a descriptive name.
-   ```sh
-   git checkout -b new-feature-x
-   ```
-4. **Make Your Changes**: Develop and test your changes locally.
-5. **Commit Your Changes**: Commit with a clear message describing your updates.
-   ```sh
-   git commit -m 'Implemented new feature x.'
-   ```
-6. **Push to LOCAL**: Push the changes to your forked repository.
-   ```sh
-   git push origin new-feature-x
-   ```
-7. **Submit a Pull Request**: Create a PR against the original project repository. Clearly describe the changes and their motivations.
-8. **Review**: Once your PR is reviewed and approved, it will be merged into the main branch. Congratulations on your contribution!
-</details>
-
-<details closed>
-<summary>Contributor Graph</summary>
-<br>
-<p align="left">
-   <a href="https://LOCAL{///}graphs/contributors">
-      <img src="https://contrib.rocks/image?repo=/">
-   </a>
-</p>
-</details>
-
----
-
-## 🎗 License
-
-This project is protected under the [SELECT-A-LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
-
----
-
-## 🙌 Acknowledgments
-
-- List any resources, contributors, inspiration, etc. here.
-
----
+[ ] Optimization: Implementation of Adam/RMSProp optimizers.
+```
+🎗 License
+This project is protected under the MIT License.
