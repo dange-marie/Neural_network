@@ -35,6 +35,7 @@
         ├── my_torch_network_basic.nn     # Trained basic model
         ├── my_torch_network_medium.nn    # Trained medium model
         └── my_torch_network_full.nn      # Trained full model
+```
 
 🤖 Usage & Testing
 The system is designed to be highly modular via command-line arguments.
